@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="th"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;500;700&display=swap" rel="stylesheet">
+<title>TB Info Hub</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#3b82f6",
+                        "background-light": "#f0f9ff",
+                        "background-dark": "#0c1f3e",
+                    },
+                    fontFamily: {
+                        display: ["Prompt", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.25rem",
+                        lg: "0.5rem",
+                        xl: "0.75rem",
+                        full: "9999px"
+                    },
+                },
+            },
+        };
+		
+    </script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+body{
+	font-family: 'Prompt', sans-serif;
+    background-color: #f8f9fa;
+    color: #212529;
+}
+        .group:focus .group-focus\:block {
+            display: block;
+        }
+</style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-800 dark:text-slate-200">
+<div class="relative flex h-screen min-h-screen w-full flex-col overflow-hidden">
+<div class="flex h-full grow flex-col">
+<header class="absolute top-0 z-20 w-full bg-transparent">
+<div class="container mx-auto flex items-center justify-between whitespace-nowrap px-4 sm:px-6 lg:px-8 py-4">
+<div class="flex items-center gap-8">
+<a class="flex items-center gap-2 text-white" href="#">
+<span class="material-symbols-outlined text-primary text-3xl"> health_and_safety </span>
+<h2 class="text-xl font-bold">TB Info Hub</h2>
+</a>
+</div>
+</div>
+</header>
+<main class="flex-1">
+<div class="@container h-full">
+<div class="relative flex min-h-screen flex-col items-center justify-center gap-8 bg-cover bg-center p-8 text-white"
+     style="background-image: linear-gradient(rgba(18, 55, 100, 0.6), rgba(11, 24, 43, 0.8)), url('Doctors-rafiki.svg');">
+<div class="flex max-w-3xl flex-col items-center gap-6 text-center">
+<h1 class="text-5xl font-black tracking-tight @[640px]:text-6xl">วัณโรค (Tuberculosis; TB)</h1>
+<p class="text-lg text-slate-200 @[640px]:text-xl">
+                                คือการติดเชื้อที่แพร่กระจายได้ง่ายซึ่งส่งผลหลักต่อปอด สำรวจศูนย์ข้อมูลนี้เพื่อเรียนรู้เกี่ยวกับอาการ การรักษา การป้องกัน และข้อมูลอื่น ๆ เพิ่มเติม
+                            </p>
+</div>
+<div class="flex flex-wrap items-center justify-center gap-4">
+<a class="flex items-center justify-center rounded-full border border-white/20 bg-white/5 px-6 py-2 text-sm font-medium text-white backdrop-blur-sm transition-colors hover:bg-white/10" href="symptoms.html">อาการ</a>
+<a class="flex items-center justify-center rounded-full border border-white/20 bg-white/5 px-6 py-2 text-sm font-medium text-white backdrop-blur-sm transition-colors hover:bg-white/10" href="treatment.html">การรักษา</a>
+<a class="flex items-center justify-center rounded-full border border-white/20 bg-white/5 px-6 py-2 text-sm font-medium text-white backdrop-blur-sm transition-colors hover:bg-white/10" href="prevention.html">การป้องกัน</a>
+<a class="flex items-center justify-center rounded-full border border-white/20 bg-white/5 px-6 py-2 text-sm font-medium text-white backdrop-blur-sm transition-colors hover:bg-white/10" href="medication.html">ยารักษา</a>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+
+</body></html>
