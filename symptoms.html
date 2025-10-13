@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="th"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;500;700&display=swap" rel="stylesheet">
+<title>TB Info Hub - Symptoms</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            DEFAULT: "#2563eb", // A professional shade of blue
+                            light: "#60a5fa",
+                            dark: "#1e40af"
+                        },
+                        "background-light": "#f0f5ff", // A very light blue background
+                        "background-dark": "#1e293b", // A dark slate blue for dark mode
+                        "text-light": "#1e293b",
+                        "text-dark": "#e2e8f0"
+                    },
+                    fontFamily: {
+                        display: ["Prompt", "sans-serif"]
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.25rem",
+                        lg: "0.5rem",
+                        xl: "0.75rem",
+                        full: "9999px"
+                    },
+                },
+            },
+        }
+	document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.getElementById("menuToggle");
+    const dropdownMenu = document.getElementById("dropdownMenu");
+
+    menuToggle.addEventListener("click", function () {
+      dropdownMenu.classList.toggle("hidden");
+    });
+  });
+    </script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+		.group:focus .group-focus\:block {
+            display: block;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden" id="a8fabf7ac55e4d5d8dc3ee6e54798257">
+<header class="sticky top-0 z-30 w-full bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm shadow-sm">
+<div class="container mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8 py-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-3xl"> health_and_safety </span>
+<a class="text-xl font-bold text-text-light dark:text-text-dark" href="index.html">TB Info Hub</a>
+</div>
+<nav class="hidden md:flex items-center gap-6">
+<a class="px-3 py-2 rounded-md text-sm font-medium bg-primary text-white" href="#">อาการ</a>
+<a class="px-3 py-2 rounded-md text-sm font-medium text-muted-light dark:text-muted-dark hover:bg-primary/10 hover:text-primary dark:hover:bg-primary/20 dark:hover:text-primary transition-colors" href="treatment.html">การรักษา</a>
+<a class="px-3 py-2 rounded-md text-sm font-medium text-muted-light dark:text-muted-dark hover:bg-primary/10 hover:text-primary dark:hover:bg-primary/20 dark:hover:text-primary transition-colors" href="prevention.html">การป้องกัน</a>
+<a class="px-3 py-2 rounded-md text-sm font-medium text-muted-light dark:text-muted-dark hover:bg-primary/10 hover:text-primary dark:hover:bg-primary/20 dark:hover:text-primary transition-colors" href="medication.html">ยารักษา</a>
+</nav>
+<div class="relative md:hidden">
+  <!-- ปุ่มเมนู -->
+  <button id="menuToggle" class="flex items-center justify-center rounded-full w-10 h-10 text-gray-600 dark:text-gray-200 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors focus:outline-none">
+    <span class="material-symbols-outlined">menu</span>
+  </button>
+
+  <!-- เมนู dropdown -->
+  <div id="dropdownMenu" class="absolute right-0 mt-2 w-48 origin-top-right rounded-md bg-white dark:bg-slate-800 shadow-lg ring-1 ring-black ring-opacity-5 hidden">
+    <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+      <a href="#" class="block px-4 py-2 text-sm text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-700" role="menuitem">อาการ</a>
+      <a href="treatment.html" class="block px-4 py-2 text-sm text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-700" role="menuitem">การรักษา</a>
+      <a href="prevention.html" class="block px-4 py-2 text-sm text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-700" role="menuitem">การป้องกัน</a>
+      <a href="medication.html" class="block px-4 py-2 text-sm text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-700" role="menuitem">ยารักษา</a>
+    </div>
+  </div>
+</div>
+</div>
+</header>
+<main class="flex-1">
+<section class="py-16 md:py-24">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="max-w-4xl mx-auto">
+<h1 class="text-4xl font-black tracking-tight sm:text-5xl text-primary-dark dark:text-primary-light">อาการของวัณโรค</h1>
+<p class="mt-4 text-lg sm:text-xl text-text-light/80 dark:text-text-dark/80">
+                            วัณโรค (TB) สามารถส่งผลกระทบต่อหลายส่วนของร่างกาย แต่โดยหลักแล้วจะเกิดที่ปอด (วัณโรคปอด) อาการอาจเริ่มต้นอย่างไม่ชัดเจนและอาจถูกเข้าใจผิดว่าเป็นโรคอื่น การเข้าใจสัญญาณของโรคจึงเป็นสิ่งสำคัญเพื่อการตรวจพบและรักษาได้ตั้งแต่เนิ่นๆ
+                        </p>
+</div>
+</div>
+</section>
+<section class="pb-16 md:pb-24">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="max-w-4xl mx-auto space-y-12">
+<div class="bg-white dark:bg-slate-800/50 rounded-xl shadow-lg overflow-hidden">
+<div class="p-6 md:p-8">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-4xl text-primary">pulmonology</span>
+<h2 class="text-2xl md:text-3xl font-bold text-text-light dark:text-text-dark">อาการของวัณโรคปอด</h2>
+</div>
+<p class="mt-4 text-text-light/80 dark:text-text-dark/80">อาการที่พบบ่อยที่สุดของวัณโรคปอดมักจะค่อย ๆ ปรากฏขึ้น ได้แก่:</p>
+<ul class="mt-6 space-y-4">
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+<div>
+<h4 class="font-semibold text-text-light dark:text-text-dark">ไอเริ้อรัง</h4>
+<p class="text-text-light/80 dark:text-text-dark/80">อาการไอที่นานเกินสามสัปดาห์ถือเป็นอาการเด่นของวัณโรค ในระยะแรกอาจเริ่มจากการไอแห้งเล็กน้อย แต่สามารถพัฒนาไปเป็นการไอที่มีเสมหะหรือมูก และบางครั้งอาจมีเลือดปน (เรียกว่า ไอเป็นเลือด หรือ hemoptysis)</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+<div>
+<h4 class="font-semibold text-text-light dark:text-text-dark">เจ็บหน้าอก</h4>
+<p class="text-text-light/80 dark:text-text-dark/80">อาการเจ็บอาจเกิดขึ้นขณะหายใจหรือไอ ซึ่งเกิดจากการอักเสบของเนื้อปอดและเยื่อหุ้มปอด (pleura) ที่อยู่รอบ ๆ ปอด</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="bg-white dark:bg-slate-800/50 rounded-xl shadow-lg overflow-hidden">
+<div class="p-6 md:p-8">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-4xl text-primary">sick</span>
+<h2 class="text-2xl md:text-3xl font-bold text-text-light dark:text-text-dark">อาการทั่วร่างกาย (Systemic)</h2>
+</div>
+<p class="mt-4 text-text-light/80 dark:text-text-dark/80">อาการเหล่านี้ส่งผลต่อทั้งร่างกาย และบ่งบอกว่าการติดเชื้อกำลังอยู่ในระยะที่มีการดำเนินและลุกลามต่อเนื่อง</p>
+<div class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-6">
+<div class="flex items-start gap-3 p-4 rounded-lg bg-background-light dark:bg-background-dark">
+<span class="material-symbols-outlined text-primary-dark dark:text-primary-light text-2xl">thermostat</span>
+<div>
+<h4 class="font-bold">ไข้ &amp; อาการหนาวสั่น</h4>
+<p class="text-sm text-text-light/80 dark:text-text-dark/80">ไข้ต่ำร่วมกับอาการหนาวสั่นเป็นอาการที่พบได้บ่อย ขณะที่ร่างกายกำลังต่อสู้กับการติดเชื้อ</p>
+</div>
+</div>
+<div class="flex items-start gap-3 p-4 rounded-lg bg-background-light dark:bg-background-dark">
+<span class="material-symbols-outlined text-primary-dark dark:text-primary-light text-2xl">nights_stay</span>
+<div>
+<h4 class="font-bold">เหงื่อออกตอนกลางคืน</h4>
+<p class="text-sm text-text-light/80 dark:text-text-dark/80">เหงื่อออกมากขณะนอนหลับ จนเปียกชุ่มผ้าปูที่นอน</p>
+</div>
+</div>
+<div class="flex items-start gap-3 p-4 rounded-lg bg-background-light dark:bg-background-dark">
+<span class="material-symbols-outlined text-primary-dark dark:text-primary-light text-2xl">weight</span>
+<div>
+<h4 class="font-bold">น้ำหนักลดโดยไม่ทราบสาเหตุ</h4>
+<p class="text-sm text-text-light/80 dark:text-text-dark/80">น้ำหนักลดโดยไม่ตั้งใจ ซึ่งเรียกอีกอย่างว่า “ภาวะผอมแห้ง” (wasting)</p>
+</div>
+</div>
+<div class="flex items-start gap-3 p-4 rounded-lg bg-background-light dark:bg-background-dark">
+<span class="material-symbols-outlined text-primary-dark dark:text-primary-light text-2xl">no_food</span>
+<div>
+<h4 class="font-bold">เบื่ออาหาร</h4>
+<p class="text-sm text-text-light/80 dark:text-text-dark/80">เป็นอาการที่พบได้บ่อยในผู้ป่วยวัณโรค ทำให้ไม่รู้สึกอยากอาหาร ส่งผลให้รับประทานได้น้อยลงและอาจนำไปสู่น้ำหนักลดโดยไม่ตั้งใจในระยะยาว</p>
+</div>
+</div>
+<div class="flex items-start gap-3 p-4 rounded-lg bg-background-light dark:bg-background-dark col-span-1 sm:col-span-2">
+<span class="material-symbols-outlined text-primary-dark dark:text-primary-light text-2xl">sentiment_very_dissatisfied</span>
+<div>
+<h4 class="font-bold">อาการอ่อนเพลียและไม่มีแรง</h4>
+<p class="text-sm text-text-light/80 dark:text-text-dark/80">เป็นอาการทั่วไปที่พบในผู้ป่วยวัณโรค โดยผู้ป่วยจะรู้สึกเหนื่อยง่าย ไม่มีแรง และไม่สดชื่น แม้ไม่ได้ทำกิจกรรมหนัก</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-slate-800/50 rounded-xl shadow-lg overflow-hidden">
+<div class="p-6 md:p-8">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-4xl text-primary">emergency_home</span>
+<h2 class="text-2xl md:text-3xl font-bold text-text-light dark:text-text-dark">อาการของวัณโรคนอกปอด</h2>
+</div>
+<p class="mt-4 text-text-light/80 dark:text-text-dark/80">เมื่อวัณโรคแพร่ออกจากปอด อาการจะขึ้นอยู่กับอวัยวะที่ได้รับผลกระทบ ซึ่งอาจแตกต่างกันไป ภาวะนี้พบได้บ่อยในผู้ที่มีภูมิคุ้มกันอ่อนแอ เช่น ผู้ป่วย HIV ผู้ที่ได้รับยากดภูมิ หรือผู้สูงอายุ ทำให้ร่างกายไม่สามารถควบคุมการแพร่กระจายของเชื้อวัณโรคได้อย่างมีประสิทธิภาพ</p>
+<ul class="mt-6 space-y-4">
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">arrow_right</span>
+<div>
+<h4 class="font-semibold text-text-light dark:text-text-dark">ต่อมน้ำเหลือง :</h4>
+<p class="text-text-light/80 dark:text-text-dark/80">ต่อมน้ำเหลืองที่มักได้รับผลกระทบคือบริเวณคอ ซึ่งอาจมีลักษณะบวมโตเรื้อรัง ไม่เจ็บ หรือเจ็บเล็กน้อย และไม่ตอบสนองต่อการรักษาด้วยยาปฏิชีวนะทั่วไป ในบางรายต่อมน้ำเหลืองอาจแตกออกเป็นแผลและมีหนองไหล ซึ่งเป็นลักษณะเฉพาะของวัณโรค</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">arrow_right</span>
+<div>
+<h4 class="font-semibold text-text-light dark:text-text-dark">กระดูก &amp; ข้อ :</h4>
+<p class="text-text-light/80 dark:text-text-dark/80">อาจทำให้เกิดอาการปวดหลังเรื้อรังและความตึงแข็งของกระดูกสันหลัง ซึ่งเป็นลักษณะของโรค Pott’s disease นอกจากนี้ยังอาจมีอาการปวดข้อ บวม และเคลื่อนไหวลำบากในบริเวณที่ได้รับผลกระทบ ในบางกรณีอาจเกิดความผิดรูปของกระดูก</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">arrow_right</span>
+<div>
+<h4 class="font-semibold text-text-light dark:text-text-dark">เยื่อหุ้มสมอง (Tuberculous Meningitis) :</h4>
+<p class="text-text-light/80 dark:text-text-dark/80">ปวดศีรษะ มีไข้สูง คอแข็ง สับสน ซึม หรือมีการเปลี่ยนแปลงของระดับความรู้สึกตัว ในบางรายอาจมีอาการชักหรืออัมพาตบางส่วน</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">arrow_right</span>
+<div>
+<h4 class="font-semibold text-text-light dark:text-text-dark">เยื่อหุ้มปอด (Tuberculous Pleuritis) :</h4>
+<p class="text-text-light/80 dark:text-text-dark/80">เจ็บหน้าอกขณะหายใจเข้า หายใจลำบาก เหนื่อยง่าย และมีไข้ต่ำร่วมกับเหงื่อออกตอนกลางคืน ในบางรายอาจมีน้ำสะสมในช่องเยื่อหุ้มปอด (pleural effusion) ซึ่งส่งผลให้ปอดขยายตัวได้น้อยลงและทำให้การหายใจติดขัด</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">arrow_right</span>
+<div>
+<h4 class="font-semibold text-text-light dark:text-text-dark">ระบบทางเดินปัสสาวะ (Genitourinary Tuberculosis) :</h4>
+<p class="text-text-light/80 dark:text-text-dark/80">ปัสสาวะขัดหรือแสบขณะปัสสาวะ ปัสสาวะบ่อย ปัสสาวะเป็นเลือด หรือมีหนองปนในปัสสาวะ บางรายอาจมีอาการปวดหลังหรือปวดท้องน้อยเรื้อรัง หากเชื้อแพร่ไปยังอวัยวะสืบพันธุ์ อาจส่งผลต่อภาวะเจริญพันธุ์ เช่น ภาวะมีบุตรยากในเพศหญิง หรือการอักเสบของอัณฑะในเพศชาย </p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">arrow_right</span>
+<div>
+<h4 class="font-semibold text-text-light dark:text-text-dark">กล่องเสียง (Laryngeal Tuberculosis) :</h4>
+<p class="text-text-light/80 dark:text-text-dark/80">เสียงแหบหรือเสียงเปลี่ยนไป ไอเรื้อรัง โดยเฉพาะไอมีเสมหะหรือเลือด เจ็บคอขณะพูดหรือกลืนอาหาร และรู้สึกระคายเคืองในลำคอ ภาวะนี้มักพบร่วมกับวัณโรคปอด และสามารถแพร่เชื้อผ่านละอองฝอยขณะพูดหรือไอ</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="bg-white dark:bg-slate-800/50 rounded-xl shadow-lg overflow-hidden">
+<div class="p-6 md:p-8">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-4xl text-primary">child_care</span>
+<h2 class="text-2xl md:text-3xl font-bold text-text-light dark:text-text-dark">อาการวัณโรคในเด็ก</h2>
+</div>
+<p class="mt-4 text-text-light/80 dark:text-text-dark/80">วัณโรคในเด็กอาจแสดงอาการแตกต่างจากในผู้ใหญ่ โดยมักมีอาการที่ไม่จำเพาะเจาะจง ทำให้การวินิจฉัยเป็นเรื่องที่ท้าทาย ดังนั้นการตระหนักรู้ถึงสัญญาณเหล่านี้จึงมีความสำคัญอย่างยิ่งสำหรับผู้ปกครองและผู้ดูแล เพื่อให้สามารถพาเด็กเข้ารับการตรวจและรักษาได้อย่างทันท่วงที</p>
+<ul class="mt-6 space-y-4">
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+<div>
+<h4 class="font-semibold text-text-light dark:text-text-dark">ไข้เรื้อรังโดยไม่ทราบสาเหตุ</h4>
+<p class="text-text-light/80 dark:text-text-dark/80">ไข้ที่เป็นต่อเนื่องโดยไม่มีสาเหตุชัดเจน เป็นหนึ่งในสัญญาณที่พบได้บ่อยในวัณโรคในเด็ก</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+<div>
+<h4 class="font-semibold text-text-light dark:text-text-dark">ภาวะเจริญเติบโตช้า หรือ น้ำหนักลดลง</h4>
+<p class="text-text-light/80 dark:text-text-dark/80">ทารกและเด็กอาจมีน้ำหนักไม่เพิ่มตามเกณฑ์ที่ควรจะเป็น หรืออาจมีน้ำหนักลดลง ซึ่งถือเป็นสัญญาณเตือนที่สำคัญอย่างยิ่ง</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+<div>
+<h4 class="font-semibold text-text-light dark:text-text-dark">ต่อมน้ำเหลือง</h4>
+<p class="text-text-light/80 dark:text-text-dark/80">ต่อมน้ำเหลืองที่มักได้รับผลกระทบคือบริเวณคอ ซึ่งอาจมีลักษณะบวมโตเรื้อรัง ไม่เจ็บ หรือเจ็บเล็กน้อย และไม่ตอบสนองต่อการรักษาด้วยยาปฏิชีวนะทั่วไป ในบางรายต่อมน้ำเหลืองอาจแตกออกเป็นแผลและมีหนองไหล ซึ่งเป็นลักษณะเฉพาะของวัณโรค</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+<div>
+<h4 class="font-semibold text-text-light dark:text-text-dark">ไอเรื้อรัง</h4>
+<p class="text-text-light/80 dark:text-text-dark/80">เช่นเดียวกับในผู้ใหญ่ อาการไอที่ไม่หายขาดถือเป็นหนึ่งในอาการสำคัญของวัณโรคในเด็ก แม้อาจแสดงออกไม่ชัดเจนเท่าผู้ใหญ่ แต่ก็เป็นสัญญาณที่ควรเฝ้าระวัง</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="border-t-2 border-primary-light dark:border-primary-dark pt-8 mt-12">
+<div class="text-center">
+<h3 class="text-xl font-bold text-primary-dark dark:text-primary-light">"ควรไปพบแพทย์เมื่อใด"</h3>
+<p class="mt-2 max-w-2xl mx-auto text-text-light/80 dark:text-text-dark/80">หากคุณมีอาการไอเรื้อรัง น้ำหนักลดโดยไม่ทราบสาเหตุ มีไข้ หรือเหงื่อออกมากตอนกลางคืน ควรรีบไปพบแพทย์โดยเร็ว การวินิจฉัยและรักษาตั้งแต่ระยะแรกมีความสำคัญอย่างยิ่งในการป้องกันการแพร่กระจายของวัณโรคและช่วยให้ฟื้นตัวได้อย่างสมบูรณ์ โดยเฉพาะในผู้ที่มีภูมิคุ้มกันอ่อนแอ หรือเคยสัมผัสใกล้ชิดกับผู้ป่วยวัณโรคระยะติดต่อ</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-slate-800 text-slate-300 py-8">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+<p class="text-sm">© 2024 TB Info Hub. เผยแพร่เพื่อการศึกษา ไม่สงวนลิขสิทธิ์</p>
+<p class="text-xs mt-2 text-slate-400">ข้อมูลนี้จัดทำขึ้นเพื่อวัตถุประสงค์ทางการศึกษาเท่านั้น โดยอ้างอิงจากแหล่งข้อมูลทางการแพทย์และสาธารณสุข เช่น องค์การอนามัยโลก (WHO), กรมควบคุมโรค กระทรวงสาธารณสุข และไม่สามารถใช้แทนคำแนะนำทางการแพทย์จากผู้เชี่ยวชาญได้</p>
+</div>
+</footer>
+</div>
+
+</body></html>

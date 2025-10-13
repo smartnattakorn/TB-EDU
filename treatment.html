@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="th"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;500;700&display=swap" rel="stylesheet">
+<title>TB Info Hub - Treatment</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            DEFAULT: "#2563eb", // A professional shade of blue
+                            light: "#60a5fa",
+                            dark: "#1e40af"
+                        },
+                        "background-light": "#f0f5ff", // A very light blue background
+                        "background-dark": "#1e293b", // A dark slate blue for dark mode
+                        "text-light": "#1e293b",
+                        "text-dark": "#e2e8f0"
+                    },
+                    fontFamily: {
+                        display: ["Prompt", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.25rem",
+                        lg: "0.5rem",
+                        xl: "0.75rem",
+                        full: "9999px"
+                    },
+                },
+            },
+        };
+	document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.getElementById("menuToggle");
+    const dropdownMenu = document.getElementById("dropdownMenu");
+
+    menuToggle.addEventListener("click", function () {
+      dropdownMenu.classList.toggle("hidden");
+    });
+  });
+    </script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+        .group:focus .group-focus\:block {
+            display: block;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden" id="a8fabf7ac55e4d5d8dc3ee6e54798257">
+<header class="sticky top-0 z-30 w-full bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm shadow-sm">
+<div class="container mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8 py-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-3xl"> health_and_safety </span>
+<a class="text-xl font-bold text-text-light dark:text-text-dark" href="index.html">TB Info Hub</a>
+</div>
+<nav class="hidden md:flex items-center gap-6">
+<a class="px-3 py-2 rounded-md text-sm font-medium text-muted-light dark:text-muted-dark hover:bg-primary/10 hover:text-primary dark:hover:bg-primary/20 dark:hover:text-primary transition-colors" href="symptoms.html">อาการ</a>
+<a class="px-3 py-2 rounded-md text-sm font-medium bg-primary text-white" href="#">การรักษา</a>
+<a class="px-3 py-2 rounded-md text-sm font-medium text-muted-light dark:text-muted-dark hover:bg-primary/10 hover:text-primary dark:hover:bg-primary/20 dark:hover:text-primary transition-colors" href="prevention.html">การป้องกัน</a>
+<a class="px-3 py-2 rounded-md text-sm font-medium text-muted-light dark:text-muted-dark hover:bg-primary/10 hover:text-primary dark:hover:bg-primary/20 dark:hover:text-primary transition-colors" href="medication.html">ยารักษา</a>
+</nav>
+<div class="relative md:hidden">
+  <!-- ปุ่มเมนู -->
+  <button id="menuToggle" class="flex items-center justify-center rounded-full w-10 h-10 text-gray-600 dark:text-gray-200 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors focus:outline-none">
+    <span class="material-symbols-outlined">menu</span>
+  </button>
+
+  <!-- เมนู dropdown -->
+  <div id="dropdownMenu" class="absolute right-0 mt-2 w-48 origin-top-right rounded-md bg-white dark:bg-slate-800 shadow-lg ring-1 ring-black ring-opacity-5 hidden">
+    <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+      <a href="symptoms.html" class="block px-4 py-2 text-sm text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-700" role="menuitem">อาการ</a>
+      <a href="#" class="block px-4 py-2 text-sm text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-700" role="menuitem">การรักษา</a>
+      <a href="prevention.html" class="block px-4 py-2 text-sm text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-700" role="menuitem">การป้องกัน</a>
+      <a href="medication.html" class="block px-4 py-2 text-sm text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-700" role="menuitem">ยารักษา</a>
+    </div>
+  </div>
+</div>
+</div>
+</header>
+<main class="flex-1">
+<section class="py-16 md:py-24">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="max-w-4xl mx-auto">
+<h1 class="text-4xl font-black tracking-tight sm:text-5xl text-primary-dark dark:text-primary-light">การรักษาวัณโรค</h1>
+<p class="mt-4 text-lg sm:text-xl text-text-light/80 dark:text-text-dark/80">
+                            การรักษาที่มีประสิทธิภาพมีความสำคัญอย่างยิ่งในการทำให้ผู้ป่วยวัณโรคหายขาด ป้องกันการแพร่กระจายของโรค และลดความเสี่ยงต่อการเกิดภาวะดื้อยา การรักษาวัณโรคเป็นกระบวนการที่มีโครงสร้างชัดเจน โดยใช้ยาหลายชนิดร่วมกัน และต้องรับประทานอย่างเคร่งครัดต่อเนื่องเป็นระยะเวลาหลายเดือนเพื่อให้ได้ผลลัพธ์ที่ดีที่สุด
+                        </p>
+</div>
+</div>
+</section>
+<section class="pb-16 md:pb-24">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="max-w-4xl mx-auto space-y-12">
+<div class="bg-white dark:bg-slate-800/50 rounded-xl shadow-lg overflow-hidden">
+<div class="p-6 md:p-8">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-4xl text-primary">biotech</span>
+<h2 class="text-2xl md:text-3xl font-bold text-text-light dark:text-text-dark">การประเมินก่อนเริ่มการรักษา</h2>
+</div>
+<p class="mt-4 text-text-light/80 dark:text-text-dark/80">เมื่อผู้ป่วยได้รับการวินิจฉัยว่าเป็นวัณโรค ต้องมีการตรวจสอบและประเมินผู้ป่วยก่อนและเพื่อประเมินความไวหรือดื้อยาของเชื้อวัณโรคที่ตรวจพบ และความเสี่ยงรายุบคคล การตรวจสอบที่แม่นยำช่วยให้สามารถเลือกแนวทางการรักษาได้อย่างเหมาะสมและเพิ่มโอกาสในการหายขาดจากโรค</p>
+<ul class="mt-6 space-y-4">
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+<div>
+<h4 class="font-semibold text-text-light dark:text-text-dark">การตรวจหาเชื้อ HIV</h4>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+<div>
+<h4 class="font-semibold text-text-light dark:text-text-dark">ตรวจการทำงานของตับ (AST, ALT, Bilirubin)</h4>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+<div>
+<h4 class="font-semibold text-text-light dark:text-text-dark">ตรวจการทำงานของไต (CrCl, BUN, Creatinine)</h4>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+<div>
+<h4 class="font-semibold text-text-light dark:text-text-dark">ตรวจสายตาในผู้สูงอายุหรือผู้มีโรคตาเดิม (ก่อนใช้ Ethambutol)</h4>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+<div>
+<h4 class="font-semibold text-text-light dark:text-text-dark">ประเมินประวัติการใช้ยาและการดื่มสุรา</h4>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+<div>
+<h4 class="font-semibold text-text-light dark:text-text-dark">ตรวจเสมหะเพื่อทำ Drug Sensitivity Test (DST) หากเคยรักษามาก่อน</h4>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="bg-white dark:bg-slate-800/50 rounded-xl shadow-lg overflow-hidden">
+<div class="p-6 md:p-8">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-4xl text-primary">medication</span>
+<h2 class="text-2xl md:text-3xl font-bold text-text-light dark:text-text-dark">แนวทางการใช้ยามาตรฐานในการรักษาวัณโรค</h2>
+</div>
+<p class="mt-4 text-text-light/80 dark:text-text-dark/80">การรักษามาตรฐานสำหรับวัณโรคที่ไม่ดื้อยาคือการใช้ยาต้านเชื้อจุลชีพกลุ่มแรกจำนวน 4 ชนิดต่อเนื่องเป็นระยะเวลา 6 เดือน</p>
+<div class="mt-6 space-y-6">
+<div>
+<h3 class="font-bold text-lg text-primary-dark dark:text-primary-light">Intensive Phase (2 เดือนแรก)</h3>
+<p class="text-sm text-text-light/80 dark:text-text-dark/80">ระยะนี้มีเป้าหมายเพื่อกำจัดเชื้อวัณโรคส่วนใหญ่ให้ได้อย่างรวดเร็ว โดยทั่วไปจะประกอบด้วยยา :</p>
+<div class="mt-4 grid grid-cols-2 gap-4">
+<div class="flex items-center gap-3 p-3 rounded-lg bg-background-light dark:bg-background-dark">
+<span class="material-symbols-outlined text-primary">pill</span>
+<span class="font-semibold">Isoniazid (H)</span>
+</div>
+<div class="flex items-center gap-3 p-3 rounded-lg bg-background-light dark:bg-background-dark">
+<span class="material-symbols-outlined text-primary">pill</span>
+<span class="font-semibold">Rifampicin (R)</span>
+</div>
+<div class="flex items-center gap-3 p-3 rounded-lg bg-background-light dark:bg-background-dark">
+<span class="material-symbols-outlined text-primary">pill</span>
+<span class="font-semibold">Pyrazinamide (Z)</span>
+</div>
+<div class="flex items-center gap-3 p-3 rounded-lg bg-background-light dark:bg-background-dark">
+<span class="material-symbols-outlined text-primary">pill</span>
+<span class="font-semibold">Ethambutol (E)</span>
+</div>
+</div>
+</div>
+<div>
+<h3 class="font-bold text-lg text-primary-dark dark:text-primary-light">Continuation Phase (4 เดือนถัดมา)</h3>
+<p class="text-sm text-text-light/80 dark:text-text-dark/80">ระยะนี้มีหน้าที่กำจัดเชื้อวัณโรคที่เหลืออยู่ในร่างกายและป้องกันการกลับมาเป็นซ้ำ โดยทั่วไปจะประกอบด้วย :</p>
+<div class="mt-4 grid grid-cols-2 gap-4">
+<div class="flex items-center gap-3 p-3 rounded-lg bg-background-light dark:bg-background-dark">
+<span class="material-symbols-outlined text-primary">pill</span>
+<span class="font-semibold">Isoniazid (H)</span>
+</div>
+<div class="flex items-center gap-3 p-3 rounded-lg bg-background-light dark:bg-background-dark">
+<span class="material-symbols-outlined text-primary">pill</span>
+<span class="font-semibold">Rifampicin (R)</span>
+</div>
+</div>
+<div>
+<p class="mt-4 text-sm text-text-light/80 dark:text-text-dark/80">* หากเดือนที่ 2–3 ยังพบเชื้อ และไม่มีเชื้อดื้อยา ควรปรึกษาแพทย์เพื่อพิจารณายืดระยะต่อเนื่องเป็น 7 เดือน</p>
+</div>
+<details class="mt-4">
+<summary class="cursor-pointer text-sm text-text-light/80 dark:text-text-dark/80 hover:underline">
+	ขนาดยาสำหรับผู้ใหญ่ (อายุมากกว่า 15 ปี)
+</summary>
+<div class="mt-3 overflow-x-auto">
+	<table class="min-w-full text-sm text-left border border-slate-300 dark:border-slate-700">
+        <thead class="bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-200">
+          <tr>
+            <th class="px-4 py-2 border">น้ำหนัก (กก.)</th>
+            <th class="px-4 py-2 border">Isoniazid (H)</th>
+            <th class="px-4 py-2 border">Rifampicin (R)</th>
+			<th class="px-4 py-2 border">Pyrazinamide (Z)</th>
+            <th class="px-4 py-2 border">Ethambutol (E)</th>
+          </tr>
+		</thead>
+		<tbody class="bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-200">
+          <tr>
+            <td class="px-4 py-2 border">35–49</td>
+            <td class="px-4 py-2 border">300 mg</td>
+            <td class="px-4 py-2 border">450 mg</td>
+			<td class="px-4 py-2 border">1,000 mg</td>
+            <td class="px-4 py-2 border">800 mg</td>
+          </tr>
+		  <tr>
+            <td class="px-4 py-2 border">50–69</td>
+            <td class="px-4 py-2 border">300 mg</td>
+            <td class="px-4 py-2 border">600 mg</td>
+			<td class="px-4 py-2 border">1,500 mg</td>
+            <td class="px-4 py-2 border">1,000 mg</td>
+          </tr>
+		  <tr>
+            <td class="px-4 py-2 border">≥70</td>
+            <td class="px-4 py-2 border">300 mg</td>
+            <td class="px-4 py-2 border">600 mg</td>
+			<td class="px-4 py-2 border">2,000 mg</td>
+            <td class="px-4 py-2 border">1,200 mg</td>
+          </tr>
+		</tbody>
+    </table>
+</div>
+</details>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-slate-800/50 rounded-xl shadow-lg overflow-hidden">
+<div class="p-6 md:p-8">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-4xl text-primary">groups</span>
+<h2 class="text-2xl md:text-3xl font-bold text-text-light dark:text-text-dark">การรักษาในกลุ่มผู้ป่วยพิเศษ</h2>
+</div>
+<p class="mt-4 text-text-light/80 dark:text-text-dark/80">แนวทางการรักษาอาจมีการปรับเปลี่ยนสำหรับผู้ป่วยบางกลุ่ม เพื่อให้เหมาะสมและปลอดภัย รวมถึงเพิ่มประสิทธิภาพในการรักษา</p>
+<ul class="mt-6 space-y-4">
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">child_care</span>
+<div>
+<section class="space-y-6">
+  <!-- หัวข้อหลัก -->
+  <h2 class="text-2xl font-bold text-primary-dark dark:text-white">วัณโรคในเด็ก :</h4>
+	<div class="bg-background-light dark:bg-background-dark p-4 rounded-lg shadow-sm">
+		<h3 class="text-lg font-semibold text-black dark:text-black mb-3">สูตรยาและการรักษาวัณโรค</h3>
+			<ul class="mt-2 list-disc list-inside text-sm text-text-light dark:text-text-dark space-y-1">
+				<li>ผู้ป่วยเด็กที่เป็นวัณโรคปอด/ต่อมน้ำเหลือง แนะนำรักษาด้วยสูตรยา <strong>2HRZE/4HR</strong></li>
+				<li>เด็กที่ป่วยเป็นวัณโรคเยื่อหุ้มสมอง วัณโรคกระดูกและข้อ แนะนำรักษาด้วยสูตรยา <strong>2HRZE/10HR</strong></li>
+			</ul>
+		<h3 class="text-lg font-semibold text-black dark:text-black mt-3">ข้อแนะนำในการใช้ยาวัณโรคในเด็ก</h3>
+			<ul class="mt-2 list-disc list-inside text-sm text-text-light dark:text-text-dark space-y-1">
+				<li>ควรใช้ยาชนิดรวมเม็ด (Fixed-Dose Combination: FDC) ในขนาดที่เหมาะสมตามน้ำหนักตัว</li>
+				<li>ไม่ควรใช้สูตรยาชนิด intermittent regimen และไม่ควรใช้ streptomycin</li>
+				<li>ควรทานยาวันละครั้งเวลาท้องว่าง (เช่น ก่อนนอน)</li>
+				<li>การแยกยารับประทานสามารถแยกยาต่างชนิดไปทานในมื้อต่างกันได้</li>
+				<li>การใช้สเตียรอยด์เพื่อรักษาผู้ป่วยวัณโรคเยื่อหุ้มสมอง ควรพิจารณายาต้านวัณโรคที่เหมาะสมเพื่อป้องกันอาการของโรคที่มากขึ้น</li>
+			</ul>
+	</div>
+</section>
+</div>
+</li>
+<li class="flex items-start gap-5">
+<span class="material-symbols-outlined text-2xl text-primary mt-3">pregnant_woman</span>
+<div>
+<section class="space-y-6">
+  <!-- หัวข้อหลัก -->
+  <h2 class="text-2xl font-bold text-primary-dark dark:text-white mt-3">วัณโรคในหญิงตั้งครรภ์ :</h2>
+  <div class="bg-background-light dark:bg-background-dark p-4 rounded-lg shadow-sm">
+    <ul class="list-disc list-inside text-base text-gray-700 dark:text-gray-300 space-y-3">
+      <li>สามารถให้ยาตามสูตรมาตรฐานได้ตามปกติ โดยคำนวณขนาดยาตามน้ำหนักก่อนตั้งครรภ์</li>
+      <li>หากใช้ยา <span class="font-semibold text-blue-700 dark:text-blue-400">Isoniazid (H)</span> ควรรับประทานวิตามินบี 6 (pyridoxine) ขนาด <span class="font-semibold">50–100 มก./วัน</span> เพื่อป้องกันผลกระทบต่อระบบประสาท</li>
+      <li>หญิงที่ให้นมบุตรสามารถให้นมได้ตามปกติ แต่ควรระวังการแพร่เชื้อวัณโรคจากแม่สู่ลูก หากยังมีอาการไอมากและเสมหะยังเป็นบวก อาจเลือกใช้วิธีบีบน้ำนมใส่ขวดแล้วให้เด็กดูดจากขวดแทน</li>
+      <li>หลีกเลี่ยงการใช้ยา <span class="font-semibold text-red-600 dark:text-red-400">aminoglycosides</span> ในหญิงตั้งครรภ์และให้นมบุตร เนื่องจากอาจเกิดพิษต่อหู (ototoxicity) ของทารกในครรภ์</li>
+      <li>หลีกเลี่ยงการใช้ยากลุ่ม <span class="font-semibold text-red-600 dark:text-red-400">fluoroquinolones</span> ในหญิงตั้งครรภ์และให้นมบุตร หากจำเป็นต้องใช้ควรปรึกษาแพทย์ผู้เชี่ยวชาญ</li>
+    </ul>
+  </div>
+</section>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-3xl text-primary mt-3">coronavirus</span>
+<div>
+<section class="space-y-6">
+  <!-- หัวข้อหลัก -->
+  <h2 class="text-2xl font-bold text-primary-dark dark:text-white mt-3">วัณโรคในผู้ป่วย HIV :</h2>
+<p class="text-text-light/80 dark:text-text-dark/80">การรักษาร่วมกับยาต้านไวรัส (ART) เป็นสิ่งจำเป็นในการดูแลผู้ป่วยวัณโรคที่ติดเชื้อ HIV โดยต้องบริหารจัดการอย่างรอบคอบเพื่อหลีกเลี่ยงปฏิกิริยาระหว่างยา โดยเฉพาะระหว่างยา rifampicin กับยาต้านไวรัสบางชนิดที่อาจมีผลต่อระดับยาในเลือดและประสิทธิภาพในการรักษา</p>
+</section>
+</div>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-3xl text-primary mt-3">Nephrology</span>
+<div>
+<section class="space-y-6">
+  <!-- หัวข้อหลัก -->
+  <h2 class="text-2xl font-bold text-primary-dark dark:text-white mt-3">วัณโรคในผู้ป่วยโรคไต :</h2>
+<p class="text-text-light/80 dark:text-text-dark/80">หากมีค่า creatinine clearance < 30 มิลลิลิตรต่อนาที หรือได้รับการล้างไต ควรปรับยา</p>
+<details class="mt-4">
+<summary class="cursor-pointer text-sm text-text-light/80 dark:text-text-dark/80 hover:underline">
+	การปรับยาวัณโรคในผู่ป่วยโรคไต
+</summary>
+<div class="mt-3 overflow-x-auto">
+	<table class="min-w-full text-sm text-left border border-slate-300 dark:border-slate-700">
+        <thead class="bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-200">
+          <tr>
+            <th class="px-4 py-2 border">ยา</th>
+            <th class="px-4 py-2 border">การปรับยา</th>
+            <th class="px-4 py-2 border">ขนาดยาและระยะของการให้ยาที่แนะนำ</th>
+          </tr>
+		</thead>
+		<tbody class="bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-200">
+          <tr>
+            <td class="px-4 py-2 border">H</td>
+            <td class="px-4 py-2 border">ไม่ปรับ</td>
+            <td class="px-4 py-2 border">เหมือนเดิม</td>
+          </tr>
+		  <tr>
+            <td class="px-4 py-2 border">R</td>
+            <td class="px-4 py-2 border">ไม่ปรับ</td>
+            <td class="px-4 py-2 border">เหมือนเดิม</td>
+          </tr>
+		  <tr>
+            <td class="px-4 py-2 border">E</td>
+            <td class="px-4 py-2 border">ปรับ</td>
+            <td class="px-4 py-2 border">15-20 mg/day, 3 วันต่อสัปดาห์</td>
+          </tr>
+		  <tr>
+            <td class="px-4 py-2 border">Z</td>
+            <td class="px-4 py-2 border">ปรับ</td>
+            <td class="px-4 py-2 border">20-30 mg/day, 3 วันต่อสัปดาห์</td>
+          </tr>
+		  <tr>
+            <td class="px-4 py-2 border">S</td>
+            <td class="px-4 py-2 border">ไม่แนะนำให้ใช้</td>
+            <td class="px-4 py-2 border">-</td>
+          </tr>
+		</tbody>
+    </table>
+</div>
+</details>
+</section>
+</div>
+<li class="flex items-start gap-4">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="50" height="40" color="#2563eb" fill="none" class="mt-2">
+    <path d="M18 8.03446C15.1204 8.03446 13.127 5.01107 10 5.01107C5.58172 5.01107 2 8.62072 2 13.0735C2 14.5065 2.17145 16.2117 2.8675 17.6086C3.41433 18.7061 4.68138 19.1636 5.88098 18.9481C10.4299 18.1308 14 15.0032 15 13.0047M15 13.0047C13.2314 13.1113 11 12.5051 9 11.0579M15 13.0047C17.8307 12.8342 22 10.2093 22 7.02666C22 3.84398 17 5.01107 14 6.46669" stroke="#2563eb" stroke-width="1.8" stroke-linecap="round"></path>
+</svg>
+<div>
+<section class="space-y-6">
+  <!-- หัวข้อหลัก -->
+  <h2 class="text-2xl font-bold text-primary-dark dark:text-white mt-3">วัณโรคในผู้ป่วยโรคตับ :</h2>
+  <div class="bg-background-light dark:bg-background-dark p-4 rounded-lg shadow-sm">
+	<li class="flex items-start gap-2">
+	<span class="material-symbols-outlined text-3xl text-primary mt-1">Article_Person</span>
+    <h3 class="text-lg font-semibold text-gray-700 dark:text-gray-100 mt-3">การติดตามอาการทางคลินิก</h3>
+	</li>
+    <p class="text-base text-gray-700 dark:text-gray-300 mb-3">
+      ควรติดตามอาการทางคลินิกทุก <span class="font-semibold text-blue-700 dark:text-blue-400">1 สัปดาห์</span> ในช่วง 2–3 สัปดาห์แรกของการรักษา และทุก <span class="font-semibold text-blue-700 dark:text-blue-400">2 สัปดาห์</span> ในช่วง 2 เดือนแรก หากสงสัยภาวะตับอักเสบ ควรตรวจเลือดเพื่อติดตามการทำงานของตับทันที
+    </p>
+  </div>
+  <div class="bg-background-light dark:bg-background-dark p-4 rounded-lg shadow-sm">
+	<li class="flex items-start gap-2">
+	<span class="material-symbols-outlined text-3xl text-primary mt-1">Pill</span>
+    <h3 class="text-lg font-semibold text-gray-700 dark:text-gray-100 mt-3">สูตรยาที่ใช้ในผู้ป่วยโรคตับ</h3>
+	</li>
+    <ul class="list-decimal tex list-inside font-semibold text-base text-red-600 dark:text-red-400 space-y-3 mt-3">
+      <li>
+        <span class="font-semibold text-red-600 dark:text-red-400">สูตรที่มียาที่มีผลต่อตับ 2 ชนิด:</span>
+        <ul class="font-medium list-disc list-inside ml-4 mt-1 space-y-1 text-gray-700 dark:text-gray-300">
+          <li>2 HRE / 7 HR</li>
+          <li>6–9 RZE</li>
+        </ul>
+      </li>
+      <li>
+        <span class="font-semibold text-red-600 dark:text-red-400">สูตรที่มียาที่มีผลต่อตับ 1 ชนิด:</span>
+        <ul class="font-medium list-disc list-inside ml-4 mt-1 space-y-1 text-gray-700 dark:text-gray-300">
+          <li>2 SHE / 16 HE</li>
+          <li>18–24 HE + fluoroquinolone</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</section>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="bg-white dark:bg-slate-800/50 rounded-xl shadow-lg overflow-hidden">
+<div class="p-6 md:p-8">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-4xl text-red-500">warning</span>
+<h2 class="text-2xl md:text-3xl font-bold text-text-light dark:text-text-dark">วัณโรคดื้อยา (DR-TB)</h2>
+</div>
+<p class="mt-4 text-text-light/80 dark:text-text-dark/80">วัณโรคดื้อยา (DR-TB) เป็นปัญหาสาธารณสุขที่สำคัญ เกิดขึ้นจากการรักษาที่ไม่เหมาะสม การไม่รับประทานยาตามแผนการรักษา หรือการรับเชื้อจากผู้ป่วยวัณโรคดื้อยารายอื่น</p>
+<ul class="mt-6 space-y-4">
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">arrow_right</span>
+<div>
+	<h3 class="font-bold text-lg text-primary-dark dark:text-primary-light">ประเภทของวัณโรคดื้อยา</h3>
+	<table class="min-w-full text-sm text-left border border-slate-300 dark:border-slate-700">
+        <thead class="bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-200">
+          <tr>
+            <th class="px-4 py-2 border">ประเภท</th>
+            <th class="px-4 py-2 border">คำอธิบาย</th>
+          </tr>
+		</thead>
+		<tbody class="bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-200">
+          <tr>
+            <td class="px-4 py-2 border">MDR-TB</td>
+            <td class="px-4 py-2 border">ดื้อยา isoniazid และ rifampicin</td>
+          </tr>
+		  <tr>
+            <td class="px-4 py-2 border">RR-TB</td>
+            <td class="px-4 py-2 border">ดื้อยา rifampicin อย่างเดียว</td>
+          </tr>
+		  <tr>
+            <td class="px-4 py-2 border">Pre-XDR-TB</td>
+            <td class="px-4 py-2 border">ดื้อยา MDR ร่วมกับ fluoroquinolone</td>
+          </tr>
+		  <tr>
+            <td class="px-4 py-2 border">XDR-TB</td>
+            <td class="px-4 py-2 border">ดื้อยา MDR ร่วมกับ fluoroquinolone และ injectable agents เช่น amikacin</td>
+          </tr>
+		</tbody>
+    </table>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">arrow_right</span>
+	<h3 class="font-bold text-lg text-primary-dark dark:text-primary-light">แนวทางการรักษา :</h3>
+	</li>
+  <div class="bg-background-light dark:bg-background-dark p-4 rounded-lg shadow-sm">
+	<li class="flex items-start gap-4">
+	<span class="material-symbols-outlined text-primary mt-1">Keep</span>
+    <h3 class="text-lg font-semibold text-blue-700 dark:text-blue-400 mb-3">สูตรยา 6 เดือน (BPaLM/BPaL)</h3>
+	</li>
+    <ul class="list-item list-inside text-base text-gray-700 dark:text-gray-300 space-y-2">
+      <li>ใช้ในผู้ป่วย MDR/RR-TB ที่ไม่มีข้อห้ามต่อ bedaquiline และ pretomanid</li>
+      <li>ประกอบด้วยยา:
+        <ul class="list-disc ml-5 space-y-1">
+          <li><strong>Bedaquiline (Bdq) :</strong> 400 mg/day 2 สัปดาห์แรก → 200 mg 3 ครั้ง/สัปดาห์ ต่ออีก 24 สัปดาห์</li>
+          <li><strong>Pretomanid (Pa) :</strong> 200 mg/day</li>
+          <li><strong>Linezolid (Lzd) :</strong> 600 mg/day (ลดเหลือ 300 mg หรือหยุดหลัง 8 สัปดาห์ หากมีอาการข้างเคียง)</li>
+          <li><strong>Moxifloxacin (Mfx) :</strong> 400 mg/day</li>
+        </ul>
+      </li>
+      <li class="text-red-600 dark:text-red-400">ควรตรวจสอบอันตรกิริยาระหว่างยา โดยเฉพาะ Bdq และ Pa ที่ผ่าน CYP450</li>
+    </ul>
+  <!-- สูตร 9 เดือน -->
+	<li class="flex items-start gap-4">
+	<span class="material-symbols-outlined text-primary mt-3">Keep</span>
+    <h3 class="text-lg font-semibold text-blue-700 dark:text-blue-400 mt-3">สูตรยา 9 เดือน (All-Oral Regimen)</h3>
+	</li>
+    <ul class="list-item list-inside text-base text-gray-700 dark:text-gray-300 space-y-2">
+      <li>ใช้ในผู้ป่วยที่ไม่สามารถใช้สูตร 6 เดือน เช่น เด็กอายุต่ำกว่า 14 ปี</li>
+      <li>มี 2 สูตรหลัก:
+        <ul class="list-disc ml-5 space-y-1">
+          <li><strong>สูตรที่มี Linezolid:</strong> Bdq, Lfx/Mfx, Cfz, Z, E, H, Lzd → ต่อด้วย Lfx/Mfx, Cfz, Z, E</li>
+          <li><strong>สูตรที่มี Ethionamide/Prothionamide:</strong> Bdq, Lfx/Mfx, Cfz, Z, E, H, Eto/Pto → ต่อด้วย Lfx/Mfx, Cfz, Z, E</li>
+        </ul>
+      </li>
+      <li class="text-red-600 dark:text-red-400">ต้องติดตามอาการไม่พึงประสงค์จาก Lzd อย่างใกล้ชิด เช่น ภาวะโลหิตจางหรือเส้นประสาทอักเสบ</li>
+    </ul>
+  <!-- สูตรระยะยาว -->
+	<li class="flex items-start gap-4">
+	<span class="material-symbols-outlined text-primary mt-3">Keep</span>
+    <h3 class="text-lg font-semibold text-blue-700 dark:text-blue-400 mt-3">สูตรยาระยะยาว (Longer Individualized Regimens)</h3>
+	</li>
+    <ul class="list-item list-inside text-base text-gray-700 dark:text-gray-300 space-y-2">
+      <li>ใช้ในผู้ป่วย XDR-TB หรือไม่สามารถใช้สูตร 6 หรือ 9 เดือน</li>
+      <li>ระยะเวลารักษา: 18–20 เดือน หรือมากกว่าตามการตอบสนอง</li>
+      <li>ต้องมี:
+        <ul class="list-disc ml-5 space-y-1">
+          <li>≥ 4 ขนานใน Intensive Phase</li>
+          <li>≥ 3 ขนานใน Continuation Phase</li>
+        </ul>
+      </li>
+      <li>เลือกยาตามกลุ่มของ WHO:
+        <ul class="list-disc ml-5 space-y-1">
+          <li><strong>กลุ่ม A:</strong> Lfx/Mfx, Bdq, Lzd</li>
+          <li><strong>กลุ่ม B:</strong> Cfz, Cs/Trd</li>
+          <li><strong>กลุ่ม C:</strong> E, Z, Dlm, Am/Sm, Eto/Pto, PAS, Imp-Cln/Mpm</li>
+        </ul>
+      </li>
+      <li>ต้องติดตามผลข้างเคียงจากยา เช่น พิษต่อหู, ตับ, ระบบประสาท</li>
+    </ul>
+  </div>
+  <li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">arrow_right</span>
+	<h3 class="font-bold text-lg text-primary-dark dark:text-primary-light">ตารางขนาดยา :</h3>
+	</li>
+	<details class="mt-4">
+	<summary class="cursor-pointer text-sm text-text-light/80 dark:text-text-dark/80 hover:underline">
+	ขนาดยา สูตรยา 6 เดือน ชนิดกิน BPaLM/BPaL (6 BPaL containing regimen)
+	</summary>
+		<div class="overflow-x-auto">
+  <table class="min-w-full border border-gray-300 dark:border-gray-700 text-sm divide-y divide-gray-200 dark:divide-gray-600">
+    <thead class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200">
+      <tr>
+        <th class="px-4 py-2 border-r">ชื่อยา</th>
+        <th class="px-4 py-2 border-r">ขนาดยาต่อวัน (mg/day)</th>
+        <th class="px-4 py-2">ปรับตามน้ำหนัก (mg/kg/day)</th>
+      </tr>
+    </thead>
+    <tbody class="bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 divide-y divide-gray-200 dark:divide-gray-600">
+      <tr>
+        <td class="px-4 py-2 border-r font-medium">Bedaquiline (Bdq)</td>
+        <td class="px-4 py-2 border-r">
+          400 mg/day (2 สัปดาห์แรก)<br>
+          → 200 mg 3 ครั้ง/สัปดาห์ (24 สัปดาห์)
+        </td>
+        <td class="px-4 py-2">ไม่ปรับตามน้ำหนัก</td>
+      </tr>
+      <tr>
+        <td class="px-4 py-2 border-r font-medium">Pretomanid (Pa)</td>
+        <td class="px-4 py-2 border-r">200 mg/day</td>
+        <td class="px-4 py-2">ไม่ปรับตามน้ำหนัก</td>
+      </tr>
+      <tr>
+        <td class="px-4 py-2 border-r font-medium">Linezolid (Lzd)</td>
+        <td class="px-4 py-2 border-r">600 mg/day<br><span class="text-xs text-gray-500 dark:text-gray-400">อาจลดเหลือ 300 mg/day หรือหยุดใช้หลัง 8 สัปดาห์ หากมีอาการไม่พึงประสงค์</span></td>
+        <td class="px-4 py-2">ไม่ปรับตามน้ำหนัก</td>
+      </tr>
+      <tr>
+        <td class="px-4 py-2 border-r font-medium">Moxifloxacin (Mfx)</td>
+        <td class="px-4 py-2 border-r">400 mg/day</td>
+        <td class="px-4 py-2">ไม่ปรับตามน้ำหนัก</td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">
+    * สูตรนี้ใช้สำหรับผู้ป่วย MDR/RR-TB ที่ไม่มีข้อห้ามในการใช้ Bdq และ Pa<br>
+    * หากไม่สามารถใช้ Linezolid ได้ในช่วง 9 สัปดาห์แรก ควรเปลี่ยนเป็นสูตร longer individualized regimens
+  </p>
+</div>
+	</details>
+	<details class="mt-4">
+<summary class="cursor-pointer text-sm text-text-light/80 dark:text-text-dark/80 hover:underline">
+	ขนาดยาสูตร 9 เดือน All-Oral Regimen
+</summary>
+<div class="mt-3 overflow-x-auto">
+	<table class="min-w-full text-sm text-left border border-slate-300 dark:border-slate-700">
+        <thead class="bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-200">
+          <tr>
+			<th class="px-4 py-2 text-left">ยา</th>
+			<th class="px-4 py-2 text-left">30–35 kg</th>
+			<th class="px-4 py-2 text-left">36–45 kg</th>
+			<th class="px-4 py-2 text-left">46–55 kg</th>
+			<th class="px-4 py-2 text-left">56–70 kg</th>
+			<th class="px-4 py-2 text-left">> 70 kg</th>
+			<th class="px-4 py-2 text-left">ปรับตามน้ำหนัก (mg/kg/day)</th>
+		  </tr>
+		</thead>
+		<tbody class="bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-200">
+          <tr>
+			<td class="px-4 py-2 font-medium">Bedaquiline</td>
+			<td colspan="5" class="px-4 py-2">400 mg/day (2 สัปดาห์แรก) → 200 mg 3 ครั้ง/สัปดาห์ (22 สัปดาห์)</td>
+			<td class="px-4 py-2">ไม่ปรับตามน้ำหนัก</td>
+		</tr>
+		  <tr>
+            <td class="px-4 py-2 font-medium">Levofloxacin</td>
+			<td class="px-4 py-2">500</td>
+			<td class="px-4 py-2">500–750</td>
+			<td class="px-4 py-2">750</td>
+			<td class="px-4 py-2">750</td>
+			<td class="px-4 py-2">750</td>
+			<td class="px-4 py-2">15–20</td>
+          </tr>
+		  <tr>
+            <td class="px-4 py-2 font-medium">Prothionamide / Ethionamide</td>
+			<td class="px-4 py-2">500</td>
+			<td class="px-4 py-2">500</td>
+			<td class="px-4 py-2">750</td>
+			<td class="px-4 py-2">750</td>
+			<td class="px-4 py-2">1,000</td>
+			<td class="px-4 py-2">15–20</td>
+          </tr>
+		  <tr>
+            <td class="px-4 py-2 font-medium">Clofazimine</td>
+			<td class="px-4 py-2">50</td>
+			<td class="px-4 py-2">100</td>
+			<td class="px-4 py-2">100</td>
+			<td class="px-4 py-2">100</td>
+			<td class="px-4 py-2">100</td>
+			<td class="px-4 py-2">ไม่ปรับตามน้ำหนัก</td>
+          </tr>
+		  <tr>
+			<td class="px-4 py-2 font-medium">Pyrazinamide</td>
+			<td class="px-4 py-2">1,000</td>
+			<td class="px-4 py-2">1,000</td>
+			<td class="px-4 py-2">1,500</td>
+			<td class="px-4 py-2">1,500</td>
+			<td class="px-4 py-2">1,500–2,000</td>
+			<td class="px-4 py-2">20–30</td>
+          </tr>
+		  <tr>
+             <td class="px-4 py-2 font-medium">Isoniazid</td>
+			<td class="px-4 py-2">400</td>
+			<td class="px-4 py-2">400</td>
+			<td class="px-4 py-2">600</td>
+			<td class="px-4 py-2">600</td>
+			<td class="px-4 py-2">600</td>
+			<td class="px-4 py-2">10–15</td>
+          </tr>
+		  <tr>
+             <td class="px-4 py-2 font-medium">Ethambutol</td>
+			<td class="px-4 py-2">800</td>
+			<td class="px-4 py-2">800</td>
+			<td class="px-4 py-2">1,000</td>
+			<td class="px-4 py-2">1,000</td>
+			<td class="px-4 py-2">1,000–1,200</td>
+			<td class="px-4 py-2">15–25</td>
+          </tr>
+		  <tr>
+            <td class="px-4 py-2 font-medium">Linezolid</td>
+			<td colspan="5" class="px-4 py-2">600 mg/day</td>
+			<td class="px-4 py-2">ไม่ปรับตามน้ำหนัก</td>
+          </tr>
+		</tbody>
+    </table>
+</div>
+</details>
+</div>
+</ul>
+</div>
+</div>
+<div class="border-t-2 border-primary-light dark:border-primary-dark pt-8 mt-12">
+<div class="text-center">
+<h3 class="text-xl font-bold text-primary-dark dark:text-primary-light">“การทำตามแผนการรักษาอย่างเคร่งครัดคือหัวใจหลัก”</h3>
+<p class="mt-2 max-w-2xl mx-auto text-text-light/80 dark:text-text-dark/80">การรับประทานยาครบตามระยะเวลาการรักษาเป็นขั้นตอนที่สำคัญที่สุดในการรักษาวัณโรคให้หายขาด โดยวิธีการรักษาแบบสังเกตโดยตรง (Directly Observed Therapy: DOT) ซึ่งเจ้าหน้าที่สาธารณสุขหรืออาสาสมัครที่ผ่านการฝึกอบรมจะคอยดูแลให้ผู้ป่วยรับประทานยาอย่างถูกต้อง เป็นกลยุทธ์หลักที่ช่วยให้ผู้ป่วยยึดมั่นในการรักษา และป้องกันการเกิดเชื้อวัณโรคดื้อยา</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-slate-800 text-slate-300 py-8">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+<p class="text-sm">© 2024 TB Info Hub. เผยแพร่เพื่อการศึกษา ไม่สงวนลิขสิทธิ์</p>
+<p class="text-xs mt-2 text-slate-400">ข้อมูลนี้จัดทำขึ้นเพื่อวัตถุประสงค์ทางการศึกษาเท่านั้น โดยอ้างอิงจากแหล่งข้อมูลทางการแพทย์และสาธารณสุข เช่น องค์การอนามัยโลก (WHO), กรมควบคุมโรค กระทรวงสาธารณสุข และไม่สามารถใช้แทนคำแนะนำทางการแพทย์จากผู้เชี่ยวชาญได้</p>
+</div>
+</footer>
+</div>
+
+</body></html>

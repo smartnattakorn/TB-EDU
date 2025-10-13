@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="th"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;500;700&display=swap" rel="stylesheet">
+<title>TB Info Hub - Medications</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            DEFAULT: "#2563eb", // A professional shade of blue
+                            light: "#60a5fa",
+                            dark: "#1e40af"
+                        },
+                        "background-light": "#f0f5ff", // A very light blue background
+                        "background-dark": "#1e293b", // A dark slate blue for dark mode
+                        "text-light": "#1e293b",
+                        "text-dark": "#e2e8f0"
+                    },
+                    fontFamily: {
+                        display: ["Prompt", "sans-serif"]
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.25rem",
+                        lg: "0.5rem",
+                        xl: "0.75rem",
+                        full: "9999px"
+                    },
+                },
+            },
+        }
+	document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.getElementById("menuToggle");
+    const dropdownMenu = document.getElementById("dropdownMenu");
+
+    menuToggle.addEventListener("click", function () {
+      dropdownMenu.classList.toggle("hidden");
+    });
+  });
+    </script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+		.group:focus .group-focus\:block {
+            display: block;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden" id="a8fabf7ac55e4d5d8dc3ee6e54798257">
+<header class="sticky top-0 z-30 w-full bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm shadow-sm">
+<div class="container mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8 py-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-3xl"> health_and_safety </span>
+<a class="text-xl font-bold text-text-light dark:text-text-dark" href="index.html">TB Info Hub</a>
+</div>
+<nav class="hidden md:flex items-center gap-6">
+<a class="px-3 py-2 rounded-md text-sm font-medium text-muted-light dark:text-muted-dark hover:bg-primary/10 hover:text-primary dark:hover:bg-primary/20 dark:hover:text-primary transition-colors" href="symptoms.html">อาการ</a>
+<a class="px-3 py-2 rounded-md text-sm font-medium text-muted-light dark:text-muted-dark hover:bg-primary/10 hover:text-primary dark:hover:bg-primary/20 dark:hover:text-primary transition-colors" href="treatment.html">การรักษา</a>
+<a class="px-3 py-2 rounded-md text-sm font-medium text-muted-light dark:text-muted-dark hover:bg-primary/10 hover:text-primary dark:hover:bg-primary/20 dark:hover:text-primary transition-colors" href="prevention.html">การป้องกัน</a>
+<a class="px-3 py-2 rounded-md text-sm font-medium bg-primary text-white" href="#">ยารักษา</a>
+</nav>
+<div class="relative md:hidden">
+  <!-- ปุ่มเมนู -->
+  <button id="menuToggle" class="flex items-center justify-center rounded-full w-10 h-10 text-gray-600 dark:text-gray-200 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors focus:outline-none">
+    <span class="material-symbols-outlined">menu</span>
+  </button>
+
+  <!-- เมนู dropdown -->
+  <div id="dropdownMenu" class="absolute right-0 mt-2 w-48 origin-top-right rounded-md bg-white dark:bg-slate-800 shadow-lg ring-1 ring-black ring-opacity-5 hidden">
+    <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+      <a href="symptoms.html" class="block px-4 py-2 text-sm text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-700" role="menuitem">อาการ</a>
+      <a href="treatment.html" class="block px-4 py-2 text-sm text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-700" role="menuitem">การรักษา</a>
+      <a href="prevention.html" class="block px-4 py-2 text-sm text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-700" role="menuitem">การป้องกัน</a>
+      <a href="#" class="block px-4 py-2 text-sm text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-700" role="menuitem">ยารักษา</a>
+    </div>
+  </div>
+</div>
+</div>
+</header>
+<main class="flex-1">
+<section class="py-16 md:py-24">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="max-w-4xl mx-auto">
+<h1 class="text-4xl font-black tracking-tight sm:text-5xl text-primary-dark dark:text-primary-light">ยารักษาวัณโรค: หัวใจสำคัญของการรักษา</h1>
+<p class="mt-4 text-lg sm:text-xl text-text-light/80 dark:text-text-dark/80">
+                            การรักษาวัณโรคอย่างได้ผลขึ้นอยู่กับการใช้ยาปฏิชีวนะเฉพาะตามแผนการรักษาที่กำหนด การทำความเข้าใจเกี่ยวกับยาเหล่านี้ บทบาทของแต่ละชนิด และผลข้างเคียงที่อาจเกิดขึ้น เป็นสิ่งสำคัญต่อการฟื้นตัวอย่างสมบูรณ์ และช่วยป้องกันการแพร่กระจายของวัณโรคที่ดื้อยา
+                        </p>
+</div>
+</div>
+</section>
+<section class="pb-16 md:pb-24">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="max-w-4xl mx-auto space-y-12">
+<div class="bg-white dark:bg-slate-800/50 rounded-xl shadow-lg overflow-hidden">
+<div class="p-6 md:p-8">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-4xl text-primary">pill</span>
+<h2 class="text-2xl md:text-3xl font-bold text-text-light dark:text-text-dark">ยาขนานแรก (First-Line Drugs)</h2>
+</div>
+<p class="mt-4 text-text-light/80 dark:text-text-dark/80">ยาเหล่านี้เป็นยาที่มีฤทธิ์แรงและใช้กันอย่างแพร่หลายในการรักษาวัณโรคที่ยังไม่ดื้อยา โดยแผนการรักษามาตรฐานแบบระยะสั้นมักประกอบด้วย :</p>
+<div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="p-4 rounded-lg bg-background-light dark:bg-background-dark">
+<h4 class="font-bold text-lg text-primary-dark dark:text-primary-light">Isoniazid (INH)</h4>
+<p class="mt-1 text-sm font-semibold">กลไกการออกฤทธิ์ : ยับยั้งการสร้าง mycolic acid ซึ่งเป็นองค์ประกอบของผนังเซลล์ของเชื้อวัณโรค และทำให้เชื้อตายในที่สุด</p>
+<p class="mt-2 text-sm text-text-light/80 dark:text-text-dark/80"><strong class="font-semibold text-text-light dark:text-text-dark">ผลข้างเคียงที่สำคัญ :</strong> ปลายประสาทอักเสบ, ตับอักเสบ,  วิตามินบี 6 มักได้รับร่วมกับยารักษาวัณโรคเพื่อป้องกันภาวะปลายประสาทอักเสบ</p>
+</div>
+<div class="p-4 rounded-lg bg-background-light dark:bg-background-dark">
+<h4 class="font-bold text-lg text-primary-dark dark:text-primary-light">Rifampin (RIF)</h4>
+<p class="mt-1 text-sm font-semibold">กลไกการออกฤทธิ์ : ขัดขวางการสร้างสารพันธุกรรม (RNA) ของเชื้อ</p>
+<p class="mt-2 text-sm text-text-light/80 dark:text-text-dark/80"><strong class="font-semibold text-text-light dark:text-text-dark">ผลข้างเคียงที่สำคัญ :</strong> สารคัดหลั่งเป็นสีส้มแดง (ปัสสาวะ, น้ำตา), ตับอักเสบ, drug interactions.</p>
+</div>
+<div class="p-4 rounded-lg bg-background-light dark:bg-background-dark">
+<h4 class="font-bold text-lg text-primary-dark dark:text-primary-light">Pyrazinamide (PZA)</h4>
+<p class="mt-1 text-sm font-semibold">กลไกการออกฤทธิ์ : ออกฤทธิ์ในสภาพแวดล้อมที่เป็นกรดซึ่งเป็นสภาวะที่เชื้อวัณโรคซ่อนตัวอยู่ภายในเซลล์ภูมิคุ้มกัน กลไกการออกฤทธิ์ที่แท้จริงยังไม่เป็นที่เข้าใจอย่างสมบูรณ์ แต่เกี่ยวข้องกับการรบกวนการทำงานของเยื่อหุ้มเซลล์</p>
+<p class="mt-2 text-sm text-text-light/80 dark:text-text-dark/80"><strong class="font-semibold text-text-light dark:text-text-dark">ผลข้างเคียงที่สำคัญ :</strong> ระดับกรดยูริกในเลือดสูงขึ้น ,   อาจทำให้มีอาการปวดตามข้อเล็กๆคล้ายโรคเกาต์ได้ </p>
+</div>
+<div class="p-4 rounded-lg bg-background-light dark:bg-background-dark">
+<h4 class="font-bold text-lg text-primary-dark dark:text-primary-light">Ethambutol (EMB)</h4>
+<p class="mt-1 text-sm font-semibold">กลไกการออกฤทธิ์ :  ทำงานคล้ายกับ Isoniazid คือเข้าไปยับยั้งการสร้างผนังเซลล์แต่จะยับยั้งการสร้าง Arabinogalactan ซึ่งเป็นองค์ประกอบอีกอย่างของผนังเซลล์เชื้อวัณโรค ทำให้เชื้ออ่อนเเอลง
+</p>
+<p class="mt-2 text-sm text-text-light/80 dark:text-text-dark/80"><strong class="font-semibold text-text-light dark:text-text-dark">ผลข้างเคียงที่สำคัญ :</strong> เส้นประสาทตาอักเสบ,  ตาพร่ามัว มองเห็นสีผิดเพี้ยนไป</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-slate-800/50 rounded-xl shadow-lg overflow-hidden">
+<div class="p-6 md:p-8">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-4xl text-primary">medical_services</span>
+<h2 class="text-2xl md:text-3xl font-bold text-text-light dark:text-text-dark">ยาขนานที่สอง (Second-Line Drugs)</h2>
+</div>
+<p class="mt-4 text-text-light/80 dark:text-text-dark/80">ใช้สำหรับรักษาวัณโรคที่ดื้อยา (MDR-TB, XDR-TB) หรือในกรณีที่ผู้ป่วยไม่สามารถทนต่อยารักษาวัณโรคชุดแรกได้ โดยทั่วไปยากลุ่มนี้มีฤทธิ์น้อยกว่าและมีความเสี่ยงต่อผลข้างเคียงสูงกว่า</p>
+<ul class="mt-6 space-y-4">
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">healing</span>
+<div>
+<h4 class="font-semibold text-text-light dark:text-text-dark">Fluoroquinolones (e.g., Levofloxacin, Moxifloxacin)</h4>
+<p class="text-text-light/80 dark:text-text-dark/80">ยับยั้งการสังเคราะห์ DNA ของเชื้อแบคทีเรีย ซึ่งเป็นกลไกสำคัญในแผนการรักษาวัณโรคที่ดื้อยา (MDR-TB)</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">healing</span>
+<div>
+<h4 class="font-semibold text-text-light dark:text-text-dark">Injectable Agents (e.g., Amikacin, Kanamycin, Capreomycin)</h4>
+<p class="text-text-light/80 dark:text-text-dark/80">ยับยั้งการสังเคราะห์โปรตีนของเชื้อแบคทีเรีย โดยมักเกี่ยวข้องกับผลข้างเคียงที่รุนแรง เช่น การสูญเสียการได้ยินและไตถูกทำลาย</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">healing</span>
+<div>
+<h4 class="font-semibold text-text-light dark:text-text-dark">Other Oral Agents (e.g., Bedaquiline, Linezolid, Cycloserine)</h4>
+<p class="text-text-light/80 dark:text-text-dark/80">ยากลุ่มนี้มีหลายกลไกการออกฤทธิ์ และถูกสงวนไว้ใช้ในกรณีที่ซับซ้อน เนื่องจากมีความเป็นพิษสูงและมีต้นทุนที่แพง ตัวอย่างเช่น :</p>
+	<ul class="mt-2 list-disc list-inside text-sm text-text-light dark:text-text-dark space-y-1">
+		<li>Bedaquiline เป็นยาชนิดใหม่ที่มีประสิทธิภาพสูงมาก ออกฤทธิ์โดยการ ยับยั้งการสร้างพลังงาน (ATP synthase) ของเชื้อวัณโรค ทำให้เชื้อตาย</li>
+		<li>Cycloserine เป็นยาที่ออกฤทธิ์ ยับยั้งการสร้างผนังเซลล์ ของเชื้อวัณโรค ผลข้างเคียงที่สำคัญเกี่ยวกับระบบประสาทส่วนกลาง เช่น อาจทำให้เกิดอาการสับสน ซึมเศร้า หรือชักได้
+	</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="bg-white dark:bg-slate-800/50 rounded-xl shadow-lg overflow-hidden">
+<div class="p-6 md:p-8">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-4xl text-primary">group_work</span>
+<h2 class="text-2xl md:text-3xl font-bold text-text-light dark:text-text-dark">เหตุผลที่ต้องใช้ยาหลายตัวพร้อมกัน</h2>
+</div>
+<p class="mt-4 text-text-light/80 dark:text-text-dark/80">การรักษาวัณโรคด้วยยาเพียงชนิดเดียวอาจนำไปสู่การพัฒนาเชื้อแบคทีเรียที่ดื้อต่อยา การใช้ยาหลายชนิดร่วมกันในเวลาเดียวกันจึงเป็นหลักสำคัญของการรักษาวัณโรคอย่างมีประสิทธิภาพ</p>
+<div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">microbiology</span>
+<div class="flex-1">
+<h4 class="font-semibold text-text-light dark:text-text-dark">ป้องกันการเกิดเชื้อดื้อยา</h4>
+<p class="text-sm text-text-light/80 dark:text-text-dark/80">ยารักษาวัณโรคแต่ละชนิดออกฤทธิ์ต่อเชื้อแบคทีเรียในรูปแบบที่แตกต่างกัน หากเชื้อบางตัวดื้อต่อยาชนิดหนึ่ง ยาชนิดอื่นในชุดการรักษายังคงสามารถกำจัดเชื้อได้</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">verified_user</span>
+<div class="flex-1">
+<h4 class="font-semibold text-text-light dark:text-text-dark">เพิ่มประสิทธิภาพในการฆ่าเชื้อ</h4>
+<p class="text-sm text-text-light/80 dark:text-text-dark/80">การใช้ยาร่วมกันสามารถกำจัดเชื้อแบคทีเรียได้รวดเร็วและมีประสิทธิภาพมากขึ้น ช่วยลดระยะเวลาการรักษาและลดโอกาสที่โรคจะกลับมาเป็นซ้ำอีก</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="border-t-2 border-primary-light dark:border-primary-dark pt-8 mt-12">
+<div class="text-center">
+<h3 class="text-xl font-bold text-primary-dark dark:text-primary-light">การปฏิบัติตามการรักษาอย่างเคร่งครัดคือสิ่งสำคัญ</h3>
+<p class="mt-2 max-w-2xl mx-auto text-text-light/80 dark:text-text-dark/80">การรับประทานยาทุกชนิดให้ครบถ้วนตามที่แพทย์สั่งตลอดระยะเวลาการรักษาเป็นสิ่งสำคัญอย่างยิ่ง หากหยุดยาเร็วเกินไป อาจทำให้การรักษาล้มเหลวและเกิดเชื้อวัณโรคดื้อยาได้</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-slate-800 text-slate-300 py-8">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+<p class="text-sm">© 2024 TB Info Hub. เผยแพร่เพื่อการศึกษา ไม่สงวนลิขสิทธิ์</p>
+<p class="text-xs mt-2 text-slate-400">ข้อมูลนี้จัดทำขึ้นเพื่อวัตถุประสงค์ทางการศึกษาเท่านั้น โดยอ้างอิงจากแหล่งข้อมูลทางการแพทย์และสาธารณสุข เช่น องค์การอนามัยโลก (WHO), กรมควบคุมโรค กระทรวงสาธารณสุข และไม่สามารถใช้แทนคำแนะนำทางการแพทย์จากผู้เชี่ยวชาญได้</p>
+</div>
+</footer>
+</div>
+
+</body></html>
